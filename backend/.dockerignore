@@ -1,0 +1,31 @@
+# git
+.git
+.gitignore
+
+# python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# virtualenv
+venv
+.env
+
+# node
+node_modules
+npm-debug.log
+
+# build
+dist
+build
+
+# docker
+Dockerfile
+docker-compose.yml
+
+# os
+.DS_Store
+

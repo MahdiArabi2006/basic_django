@@ -1,0 +1,22 @@
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# backend
+backend/django-project/.venv/
+backend/django-project/venv/
+backend/django-project/__pycache__/
+backend/django-project/db.sqlite3
+backend/django-project/media/
+backend/django-project/staticfiles/
+
+# env
+.env
+backend/.env
+frontend/.env
+docker/.env
+
+# docker artifacts
+*.tar
+*.tar.gz
