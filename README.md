@@ -35,8 +35,5 @@ The main goal of this repository is to demonstrate the practical integration of 
 
 You can launch the entire ecosystem (API, Frontend, Redis, Celery, and Nginx) with a single command:
 
-1. Clone the repository:
    ```bash
-   git clone [https://github.com/MahdiArabi2006/basic_django.git](https://github.com/MahdiArabi2006/basic_django.git)
-   cd basic_django
    docker-compose up --build
