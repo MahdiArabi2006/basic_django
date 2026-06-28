@@ -1,23 +1,20 @@
-# Asynchronous Infrastructure & Microservices Blueprint
+# Django Asynchronous Web Architecture
 
-A clean, production-grade template designed to implement and demonstrate core principles of distributed backend architectures, asynchronous job queuing, and DevOps orchestration.
+A clean implementation of a web backend focused on integrating asynchronous task queues, state management, and containerized deployment.
 
 ## Project Philosophy
-This repository does not focus on complex frontend layouts or specific monolithic business use-cases. Instead, **the primary goal of this project is to serve as an architectural sandbox for integrating infrastructure components**—proving how modern web applications decouple stateless client authentication, handle heavy non-blocking background operations, and manage secure production-grade reverse proxy networks.
+The main goal of this repository is to demonstrate the practical integration of essential backend infrastructure tools. It avoids complex business logic or advanced frontend design, focusing purely on setting up a correct production-ready pipeline.
 
 ---
 
 ## Core Architecture & System Features
 
-The application showcases a standard multi-service ecosystem where workloads are segmented effectively between synchronous API routing and asynchronous background threads:
-
-* **Decoupled REST API Backend:** Powered by Django and Django REST Framework (DRF) to process stateless operations.
-* **Stateless Authentication Engine:** High-security user session handling using JSON Web Tokens (JWT).
-* **Asynchronous Execution Queue:** Heavy/long-running operations are instantly offloaded into background processes via Celery, maintaining a sub-second API response time.
-* **In-Memory Message Broker:** Utilizes Redis for high-throughput communication and state management between the API server and worker nodes.
-* **Production Ingress Layer:** Configured with Nginx acting as an edge reverse proxy and Gunicorn as the WSGI server to manage production traffic, static assets, and upstream routing.
-* **Multi-Container Orchestration:** 100% containerized network environment bundled using Docker and Docker Compose for instant, reproducible deployments.
-
+* **REST API:** Built with Django and Django REST Framework (DRF).
+* **Session Management:** Stateless user authentication using JSON Web Tokens (JWT).
+* **Background Workers:** Non-blocking asynchronous task execution using Celery.
+* **Message Broker:** Redis for handling communication between Django and Celery.
+* **Web Server & Proxy:** Gunicorn as the WSGI server, with Nginx acting as a reverse proxy.
+* **Containerization:** Environment orchestration via Docker and Docker Compose.
 ---
 
 ## Tech Stack
